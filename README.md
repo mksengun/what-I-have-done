@@ -33,6 +33,8 @@ A command-line tool that fetches your Git commit history for the last 30 days, s
 npm install -g what-i-have-done
 ```
 
+**Note:** The `-g` flag installs the package globally, making the `what-i-have-done` command available system-wide.
+
 ### Option 2: Install from source
 
 1. **Clone this repository**
