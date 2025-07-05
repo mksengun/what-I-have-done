@@ -14,6 +14,11 @@ def parse_args():
         help='OpenAI API key (overrides environment variable OPENAI_API_KEY)',
         required=False
     )
+    parser.add_argument(
+        '-s', '--since',
+        help='Git log since date (e.g., "1.month", "2.weeks")',
+        required=True
+    )
     return parser.parse_args()
 
 # Execute Git command
