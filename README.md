@@ -28,7 +28,7 @@ A command-line tool that fetches your Git commit history for a configurable peri
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/your-username/what-I-have-done.git
+   git clone https://github.com/mksengun/what-I-have-done.git
    cd what-I-have-done
    ```
 
