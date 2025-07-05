@@ -1,0 +1,41 @@
+{
+  "name": "what-i-have-done",
+  "version": "0.0.1",
+  "description": "A command-line tool that fetches your Git commit history and generates an AI-powered monthly development report",
+  "main": "what_I_have_done.py",
+  "bin": {
+    "what-i-have-done": "./what_I_have_done.py"
+  },
+  "scripts": {
+    "test": "python3 test_what_i_have_done.py"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "analysis",
+    "openai",
+    "cli",
+    "development",
+    "report",
+    "terminal"
+  ],
+  "author": "Mustafa Sengun",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mksengun/what-I-have-done.git"
+  },
+  "homepage": "https://github.com/mksengun/what-I-have-done#readme",
+  "bugs": {
+    "url": "https://github.com/mksengun/what-I-have-done/issues"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "preferGlobal": true,
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
+}

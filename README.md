@@ -1,6 +1,6 @@
 # What I Have Done
 
-A command-line tool that fetches your Git commit history for a configurable period (default: last 30 days), sends it to the OpenAI API, and prints a visually rich, retro-style monthly development report in your terminal.
+A command-line tool that fetches your Git commit history for the last 30 days, sends it to the OpenAI API, and prints a visually rich, retro-style monthly development report in your terminal.
 
 ---
 
@@ -18,13 +18,22 @@ A command-line tool that fetches your Git commit history for a configurable peri
 
 ## 🛠 Prerequisites
 
-- **Python 3.7+**
+- **Node.js 12+** (for npm installation)
+- **Python 3.7+** (required for the tool to run)
 - `git` installed and available in your `PATH`
 - An **OpenAI API key** (create one at https://platform.openai.com)
 
 ---
 
 ## ⚙️ Installation
+
+### Option 1: Install via npm (Recommended)
+
+```bash
+npm install -g what-i-have-done
+```
+
+### Option 2: Install from source
 
 1. **Clone this repository**
    ```bash
@@ -60,20 +69,34 @@ You can provide your OpenAI API key in two ways:
 
 ## 🚀 Usage
 
-Run the script from your project directory:
+### If installed via npm:
+
+```bash
+# Basic usage (uses environment variable):
+what-i-have-done
+
+# With inline API key:
+what-i-have-done --api-key YOUR_OPENAI_KEY
+```
+
+### If running from source:
 
 ```bash
 # Basic (uses environment variable):
 python3 what-I-have-done.py
 
-# With inline API key and custom period:
+# With inline API key:
 python3 what-I-have-done.py --api-key YOUR_OPENAI_KEY
 ```
 
-### Example One-Liner
+### Example Commands
 
 ```bash
-python3 what-I-have-done.py --api-key sk-ABC123xyz
+# Generate report using environment variable
+what-i-have-done
+
+# Generate report with inline API key
+what-i-have-done --api-key sk-ABC123xyz
 ```
 
 ---
